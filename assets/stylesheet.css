@@ -54,3 +54,109 @@ div.:nth-child(even){
 div.body_text:last-chid{
 	//center 
 }
+
+/*-----------*/
+
+a:link,
+a:visited {
+  text-decoration-color: green;
+  transition: 
+    text-decoration-thickness 200ms ease-out, 
+    text-underline-offset 200ms ease-out,
+    text-decoration-color 200ms ease-out,
+    color 200ms ease-out
+  ; 
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration-color: green;
+}
+
+/* In the nav… */
+
+/* Firefox beta flags have the numbers backwards…
+   (there's not really any reason to support this) */
+nav a:link,
+nav a:visited {
+  display: inline-block;
+  padding: 0.25em;
+  text-underline-offset: -1em; 
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  text-underline-offset: -0.25em; 
+}
+
+@supports (text-underline-offset: 1em) {
+  nav a:hover,
+  nav a:focus,
+  nav a:active {
+    text-decoration-color: var(--warm-red);
+  }  
+}
+
+@supports (text-decoration-thickness: 1em) {
+  nav a:link,
+  nav a:visited {
+    text-underline-offset: 1em; 
+  }
+
+  nav a:hover,
+  nav a:focus,
+  nav a:active {
+    text-decoration-thickness: 0.25em;  
+    text-underline-offset: 0.25em; 
+  }  
+}
+
+
+/* In the paragraph… */
+
+p a:link {
+  text-underline-offset: -0.075em;
+}
+
+p a:hover {
+  text-underline-offset: -0.375em;
+}
+
+@supports (text-decoration-thickness: 1em) {
+  p a:link {
+    text-decoration-thickness: 0.125em;  
+    text-underline-offset: 0.125em;
+    text-decoration-skip-ink: none;
+  }
+
+  p a:hover {
+    color: var(--background);
+    text-decoration-thickness: 1.125em;
+    text-underline-offset: -0.875em;     
+  }
+}
+
+
+div a:link {
+  text-underline-offset: -0.075em;
+}
+
+div a:hover {
+  text-underline-offset: -0.375em;
+}
+
+@supports (text-decoration-thickness: 1em) {
+  div a:link {
+    text-decoration-thickness: 0.125em;  
+    text-underline-offset: 0.125em;
+    text-decoration-skip-ink: none;
+  }
+
+  div a:hover {
+    color: var(--background);
+    text-decoration-thickness: 1.125em;
+    text-underline-offset: -0.875em;     
+  }
+}
