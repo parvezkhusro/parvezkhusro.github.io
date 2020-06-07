@@ -9,80 +9,81 @@ Since you are digging into the code :P, here's the link to my Instagram
 (http://www.instagram.com/parvezkhusro)
 -->
 <html>
-	<head>
-	 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	 	<title>Parvez Khusro</title>
-		<meta name="description" content="Parvez Khusro: Full stack developer from India.">
-		<meta name="keywords" content="Parvez Khusro">
-		<link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
-		<style type="text/css"></style>
-		<link href='/assets/favicon.png' rel='icon' type='image/gif'/>
-		<script src='https://www.google.com/recaptcha/api.js'></script>		
-	</head>
-	<body>
-		<div id="content">
-			<div id="header">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parvez Khusro</title>
+	<meta name="description" content="Parvez Khusro: Full stack developer from India.">
+	<meta name="keywords" content="Parvez Khusro">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
+	<style type="text/css"></style>
+	<link href='/assets/favicon.png' rel='icon' type='image/gif' />
+	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+	<script src="functions.js"></script>
+</head>
+
+<body>
+	<div id="content">
+		<div id="header">
 			<div class="top">INTRO</div>
-			</div>
+		</div>
 
-			<div class="topic_header">NAME</div>
-			<div class="body_text">
-				Parvez Khusro
-			</div>
+		<div class="topic_header">NAME</div>
+		<div class="body_text">
+			Parvez Khusro
+		</div>
 
-			<div class="topic_header">BIO</div>
-			<div class="body_text">
-			    I am a Full Stack Developer from India. I turn imaginations to reality using Java, Angular, JavaScript, HTML & CSS.
-			</div>
+		<div class="topic_header">BIO</div>
+		<div class="body_text">
+			I am a Full Stack Developer from India. I turn imaginations to reality using Java, Angular, JavaScript, HTML
+			& CSS.
+		</div>
 
-			<div class="topic_header">SOCIAL</div>
-			<div class="body_text">
+		<div class="topic_header">SOCIAL</div>
+		<div class="body_text">
 			You can follow me on <a href="http://twitter.com/parvezkhusro">Twitter</a> to know more about me.
-			<!--<p><a href="http://github.com/parvezkhusro">GitHub</a> - Some of the Open Source code I have written and contributed.</p>-->
-			<!--<p><a href="http://www.parvezkhusro.blogspot.com">Blog</a> - Here I write about a lot of things. One has to visit to find out what!</p>-->
-			<!--<p><a href="http://twitter.com/parvezkhusro">Twitter</a> - I am active here too.</p>-->
-			</div>
+		</div>
 
-			
-			<div class="topic_header">EDUCATION</div>
-			<div class="body_text">
-				I am currently working as a Software Engineer at <a href="https://www.alacriti.com">Alacriti Inc</a> 
-				in Hyderabad. 
-				I have completed Masters in Computer Applications from Pondicherry University and graduated in 
-				Computer Science from Bangabasi College under University of Calcutta.
-			</div>
-			
-			
-            
-			<div class="topic_header">CONTACT</div>
-			
-			<div class="body_text">
-				<a href="https://mailhide.io/e/sI3w9">k...@g...l.com</a> - Email. This would be the best way to contact me.
-			</div>
 
-			<div class="topic_header">SEE ALSO</div>
-			<div class="body_text">
-				<p><a href="https://www.linkedin.com/in/parvezkhusro/">LinkedIn</a></p>
-			</div>
-						
-			<div class="body_text">
-				<p><a href="https://bit.ly/parvezkhusro-cv">Download my CV</a></p>
-            </div>
+		<div class="topic_header">EDUCATION</div>
+		<div class="body_text">
+			I am currently working as a Software Engineer at <a href="https://www.alacriti.com">Alacriti Inc</a>
+			in Hyderabad.
+			I have completed Masters in Computer Applications from Pondicherry University and graduated in
+			Computer Science from Bangabasi College under University of Calcutta.
+		</div>
 
-			<div class="topic_header">HISTORY</div>
-			<div class="body_text">-</div>
-        </div> 
 
-			<div id="footer">
-				<script type="text/javascript">
-					var today = new Date()
-					var year = today.getFullYear()
-					document.write(year)
-				</script>
-			</div>
-		
-               
-	</body>
+
+		<div class="topic_header">CONTACT</div>
+
+		<div class="body_text">
+			<a onclick="displayIframe()" style="cursor: pointer;text-decoration: underline;">k...@g...l.com</a> - Email.
+			This would be the best way to contact me.
+		</div>
+		<div class="body_text" id="captcha-section" style="display: none;">
+			<div id="message">Are you a robot?</div>
+			<div id="recaptcha"></div>
+
+		</div>
+
+		<div class="topic_header">SEE ALSO</div>
+		<div class="body_text">
+			<p><a href="https://www.linkedin.com/in/parvezkhusro/">LinkedIn</a></p>
+		</div>
+
+		<div class="body_text">
+			<p><a href="https://bit.ly/parvezkhusro-cv">Download my CV</a></p>
+		</div>
+	</div>
+
+	<div id="footer">
+		<script type="text/javascript">
+			var today = new Date()
+			var year = today.getFullYear()
+			document.write(year)
+		</script>
+	</div>
+</body>
+
 </html>
-
-				
